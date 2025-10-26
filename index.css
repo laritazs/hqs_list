@@ -51,7 +51,7 @@ header a{
 }
 
 header h5 {
-  color: var(--secondary-color);
+  color: var(--dark-color);
   font-size: 4vw;
 }
 
@@ -85,11 +85,11 @@ nav a:hover {
 
 .subsecao {
   display: none;
-  margin-top: 15px;
-  padding: 15px;
+  margin-top: 10px;
+  padding: 10px;
   background-color: var(--light-color);
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .subsecao:target {
@@ -115,7 +115,7 @@ table {
   border-collapse: collapse;
   background-color: #fff;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  font-size: 2.5vw;
+  font-size: 1.5vw;
   display: block;
   overflow-x: auto;
 }
@@ -137,7 +137,6 @@ tbody tr:hover {
   transition: background-color 0.3s ease;
 }
 
-a,
-button {
+a{
   -webkit-tap-highlight-color: transparent;
 }
