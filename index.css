@@ -14,20 +14,24 @@
 }
 
 html {
-  background-color: #f8e3df;
-  font-size: 16px;
-  scroll-behavior: smooth;
+  background-color: #f8e3df; /* tom claro para moldura ao redor */
 }
 
 body {
   line-height: 1.6;
   color: var(--dark-color);
+  background-image: url(./img/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: fixed;
+
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+
   min-height: 100vh;
-  padding: 10px;
+
+  padding: 40px;
 }
 
 .container {
@@ -37,7 +41,6 @@ body {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   border-radius: 12px;
   padding: 30px;
-  margin-top: 20px;
 }
 
 header {
@@ -50,11 +53,6 @@ header h1 {
   font-size: 2.5rem;
   color: var(--primary-color);
   letter-spacing: 2px;
-}
-
-header h5 {
-  color: var(--secondary-color);
-  font-weight: normal;
 }
 
 nav {
@@ -84,7 +82,6 @@ nav a:hover {
   box-shadow: 0 3px 10px var(--secondary-color);
 }
 
-/* ===== SEÇÕES ===== */
 .subsecao {
   display: none;
   margin-top: 20px;
@@ -115,7 +112,6 @@ table {
   border-collapse: collapse;
   background-color: #fff;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  margin-top: 10px;
 }
 
 thead {
@@ -134,66 +130,20 @@ tbody tr:hover {
   transition: background-color 0.3s ease;
 }
 
-@media (max-width: 900px) {
-  .container {
-    padding: 20px;
-  }
-}
-
 @media (max-width: 768px) {
   header h1 {
     font-size: 2rem;
   }
 
-  header h5 {
-    font-size: 1rem;
-  }
-
   nav ul {
     flex-direction: column;
-    align-items: center;
     gap: 10px;
-  }
-
-  nav a {
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-    background-color: rgba(99, 32, 36, 0.05);
   }
 
   table {
     font-size: 0.9rem;
   }
 
-  th, td {
-    padding: 10px;
-  }
-
   body {
-    padding: 15px;
-  }
-}
-
-@media (max-width: 500px) {
-  header h1 {
-    font-size: 1.6rem;
-  }
-
-  nav a {
-    font-size: 0.95rem;
-    padding: 8px;
-  }
-
-  table {
-    font-size: 0.8rem;
-  }
-
-  th, td {
-    padding: 8px;
-  }
-
-  .container {
-    padding: 15px;
+    padding: 20px;
   }
