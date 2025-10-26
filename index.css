@@ -115,7 +115,149 @@ table {
   border-collapse: collapse;
   background-color: #fff;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  font-size: 2.2vw;
+  font-size: 2.5vw;
+  display: block;
+  overflow-x: auto;
+}
+
+thead {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+th,td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+  min-width: 100px;
+}
+
+tbody tr:hover {
+  background-color: rgba(99, 32, 36, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}:root {
+  --primary-color: #632024;
+  --secondary-color: #6f4d38;
+  --dark-color: #25344f;
+  --info-color: #617891;
+  --light-color: #d5b893;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+html {
+  background-color: #f8e3df;
+}
+
+body {
+  line-height: 1.6;
+  color: var(--dark-color);
+  display: block;
+  padding: 10px;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  padding: 15px;
+}
+
+header {
+  text-align: center;
+  padding: 1rem 0;
+  border-bottom: 3px solid var(--primary-color);
+}
+
+header h1 {
+  font-size: 7vw;
+  letter-spacing: 1px;
+}
+
+header a{
+  text-decoration: none;
+  color: var(--primary-color);
+ 
+}
+
+header h5 {
+  color: var(--dark-color);
+  font-size: 4vw;
+}
+
+nav {
+  margin: 15px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  color: var(--light-color);
+  font-weight: 600;
+  text-align: center;
+  background-color: var(--primary-color);
+  padding: 10px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background-color: var(--secondary-color);
+}
+
+.subsecao {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: var(--light-color);
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.subsecao:target {
+  display: block;
+}
+
+.subsecao h2 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  text-align: center;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 5px;
+  font-size: 5vw;
+}
+
+.sql-block {
+  overflow-x: auto;
+}
+
+table {
+  border-radius: 8px;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  font-size: 2.5vw;
   display: block;
   overflow-x: auto;
 }
