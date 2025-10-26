@@ -15,7 +15,6 @@
 
 html {
   background-color: #f8e3df;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -42,15 +41,19 @@ header {
 
 header h1 {
   font-size: 7vw;
-  color: var(--primary-color);
   letter-spacing: 1px;
+}
+
+header a{
+  text-decoration: none;
+  color: var(--primary-color);
+ 
 }
 
 header h5 {
   color: var(--secondary-color);
   font-size: 4vw;
 }
-
 
 nav {
   margin: 15px 0;
@@ -104,15 +107,15 @@ nav a:hover {
 
 .sql-block {
   overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
 }
 
 table {
+  border-radius: 8px;
   width: 100%;
   border-collapse: collapse;
   background-color: #fff;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  font-size: 3.5vw;
+  font-size: 2.5vw;
   display: block;
   overflow-x: auto;
 }
@@ -122,8 +125,7 @@ thead {
   color: var(--light-color);
 }
 
-th,
-td {
+th,td {
   padding: 10px;
   text-align: left;
   border-bottom: 1px solid #ccc;
