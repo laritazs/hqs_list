@@ -51,6 +51,7 @@ header h5 {
   font-size: 4vw;
 }
 
+
 nav {
   margin: 15px 0;
 }
@@ -86,7 +87,6 @@ nav a:hover {
   background-color: var(--light-color);
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 90%;
 }
 
 .subsecao:target {
@@ -116,8 +116,6 @@ table {
   display: block;
   overflow-x: auto;
 }
-
-
 
 thead {
   background-color: var(--primary-color);
