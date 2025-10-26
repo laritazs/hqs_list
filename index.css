@@ -117,7 +117,6 @@ th, td {
   padding: 12px 15px;
   text-align: left;
   border-bottom: 1px solid #ccc;
-  word-break: break-word; 
 }
 
 tbody tr:hover {
@@ -128,7 +127,7 @@ tbody tr:hover {
 @media (max-width: 768px) {
     
     .container {
-        padding: 15px; 
+        padding: 15px;
     }
 
     header h1 {
@@ -136,27 +135,35 @@ tbody tr:hover {
     }
 
     nav ul {
-        gap: 5px; 
-        padding: 0 10px;
+        flex-direction: row;
+        gap: 10px;
+        padding: 0 5px;
+    }
+    
+    nav li {
+        width: auto; 
     }
 
     nav a {
-        padding: 6px 8px; 
+        padding: 8px 10px;
         font-size: 0.9rem;
+        display: block; 
         white-space: nowrap; 
     }
 
-    .sql-block {
+    .sql-block {
         overflow-x: auto; 
-        -webkit-overflow-scrolling: touch;
+        -webkit-overflow-scrolling: touch; 
     }
 
+    table {
         font-size: 0.8rem;
         min-width: 600px; 
     }
 
     th, td {
-        padding: 8px 10px; 
+        padding: 8px 10px;
+        max-width: 200px;
     }
 
     body {
