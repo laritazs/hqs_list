@@ -10,37 +10,28 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 html {
   background-color: #f8e3df;
+  scroll-behavior: smooth;
 }
 
 body {
   line-height: 1.6;
   color: var(--dark-color);
-  background-image: url(./img/bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  min-height: 100vh;
-
-  padding: 40px;
+  display: block;
+  padding: 10px;
 }
 
 .container {
-  max-width: 1000px;
   width: 100%;
+  max-width: 100%;
   background-color: rgba(255, 255, 255, 0.95);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   border-radius: 12px;
-  padding: 30px;
+  padding: 15px;
 }
 
 header {
@@ -50,45 +41,53 @@ header {
 }
 
 header h1 {
-  font-size: 2.5rem;
+  font-size: 7vw;
   color: var(--primary-color);
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
+header h5 {
+  color: var(--secondary-color);
+  font-size: 4vw;
+}
+
+/* NAV */
 nav {
-  margin: 20px 0;
+  margin: 15px 0;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: center;
-  gap: 25px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
 }
 
 nav a {
+  display: block;
   text-decoration: none;
-  color: var(--dark-color);
+  color: var(--light-color);
   font-weight: 600;
-  transition: color 0.3s ease, background-color 0.3s ease;
-  padding: 8px 12px;
-  border-radius: 6px;
+  text-align: center;
+  background-color: var(--primary-color);
+  padding: 10px;
+  border-radius: 8px;
+  transition: 0.3s;
 }
 
 nav a:hover {
-  color: var(--light-color);
-  background-color: var(--primary-color);
-  box-shadow: 0 3px 10px var(--secondary-color);
+  background-color: var(--secondary-color);
 }
 
+/* SEÇÕES */
 .subsecao {
   display: none;
-  margin-top: 20px;
-  padding: 20px;
+  margin-top: 15px;
+  padding: 15px;
   background-color: var(--light-color);
   border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .subsecao:target {
@@ -97,21 +96,27 @@ nav a:hover {
 
 .subsecao h2 {
   color: var(--primary-color);
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   text-align: center;
   border-bottom: 2px solid var(--primary-color);
   padding-bottom: 5px;
+  font-size: 5vw;
 }
 
+/* TABELAS */
 .sql-block {
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
   background-color: #fff;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  font-size: 3.5vw;
+  display: block;
+  overflow-x: auto;
 }
 
 thead {
@@ -119,10 +124,12 @@ thead {
   color: var(--light-color);
 }
 
-th, td {
-  padding: 12px 15px;
+th,
+td {
+  padding: 10px;
   text-align: left;
   border-bottom: 1px solid #ccc;
+  min-width: 100px;
 }
 
 tbody tr:hover {
@@ -130,20 +137,7 @@ tbody tr:hover {
   transition: background-color 0.3s ease;
 }
 
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 2rem;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  table {
-    font-size: 0.9rem;
-  }
-
-  body {
-    padding: 20px;
-  }
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
